@@ -1,0 +1,10 @@
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (381, 'SR', 69, 'Telenor');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (381, 'SR', 63, 'Telenor');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (381, 'SR', 62, 'Telenor');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (381, 'SR', 64, 'Mts');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (381, 'SR', 65, 'Mts');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (385, 'HR', 98, 'T-Mobile');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (385, 'HR', 99, 'T-Mobile');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (385, 'HR', 95, 'Tele-2');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (389, 'MK', 75, 'M-Telekom');
+INSERT INTO msisdntask.number_info (country_id, country_name, mn_id, mn_name) VALUES (389, 'MK', 76, 'M-Telekom');

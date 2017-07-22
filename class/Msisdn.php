@@ -61,7 +61,7 @@ class Msisdn
 
                     $validate_msisdn = [
 
-                        "validation" => "Missing from DB!",
+                        "validation" => "Your MSISDN number is missing from DB!",
                         "msisdn_info" => [],
                         "checker" => 3
                     ];
