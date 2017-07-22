@@ -11,7 +11,7 @@ require('class/Msisdn.php');
 
 $number = $_POST['msisdn_no'];
 $validate = new Msisdn($number);
-$result = $validate->validation();
+$result = json_decode($validate->validation());
 
 $subNumber = substr($number, 6);
 
@@ -57,7 +57,7 @@ $subNumber = substr($number, 6);
 
                 <div class="alert alert-<?php
 
-                switch ($result['checker']) {
+                switch ($result->checker) {
                     case 1:
                         echo "danger";
                         break;
@@ -69,7 +69,7 @@ $subNumber = substr($number, 6);
                         break;
                 }
 
-                ?>" role="alert"><?= $result['validation'] ?></div>
+                ?>" role="alert"><?= $result->validation ?></div>
 
                 <h1 class="cover-heading">Number info: </h1>
                 <br>
@@ -86,11 +86,11 @@ $subNumber = substr($number, 6);
                     <tbody>
 
 
-                    <tr><? if (count($result["msisdn_info"]) > 0) { ?>
-                            <td> <?= "0" . $result["msisdn_info"]["mn_id"]; ?></td>
-                            <td> <?= "+" . $result["msisdn_info"]["country_id"]; ?></td>
+                    <tr><? if (count($result->msisdn_info) > 0) { ?>
+                            <td> <?= "0" . $result->msisdn_info->mn_id; ?></td>
+                            <td> <?= "+" . $result->msisdn_info->country_id; ?></td>
                             <td><?= $subNumber ?></td>
-                            <td><?= $result["msisdn_info"]["country_name"]; ?></td>
+                            <td><?= $result->msisdn_info->country_name; ?></td>
                         <? } else {?>
                             <td></td>
                         <?php }?>

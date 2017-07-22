@@ -72,7 +72,7 @@ class Msisdn
         }
 
 
-        return $validate_msisdn;
+        return json_encode($validate_msisdn);
     }
 
     public function find()
