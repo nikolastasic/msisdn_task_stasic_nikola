@@ -1,0 +1,5 @@
+{
+    "require": {
+        "eher/phpunit": "1.6"
+    }
+}
