@@ -1,4 +1,4 @@
-# This Php application includes following requirements:
+# This PhP application includes following requirements:
   
   - latest PHP 
   - takes MSISDN as an input
